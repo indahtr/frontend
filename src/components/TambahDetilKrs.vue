@@ -67,7 +67,7 @@
     },
     methods: {
       loadMatakuliahList() {
-        var matkulurl = 'https://api-group7-prognet.manpits.xyz/api/matakuliah';
+        var matkulurl = 'https://api-group7-prognet.manpits.xyzapi/matakuliah';
         axios.get(matkulurl).then(({ data }) => {
           this.MatakuliahList = data;
         });

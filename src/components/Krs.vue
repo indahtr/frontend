@@ -14,16 +14,14 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/">Dashboard</router-link>
+                        <router-link class="nav-link" to="/dashboard">Dashboard</router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="/datamahasiswa">Data Mahasiswa</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Data Matakuliah
-                        </a>
-                    </li>
+                <router-link class="nav-link" to="/matakuliah">Data Matakuliah</router-link>
+              </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Data KRS
