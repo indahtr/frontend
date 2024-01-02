@@ -66,7 +66,7 @@ const routes = [
   {
     path: '/tambahmatakuliah',
     name: 'TambahMataKuliah',
-    component: () => import('../components/TambahMatakuliah.vue'),
+    component: () => import('../components/TambahMataKuliah.vue'),
   },
   {
     path: '/tambahkrs',
