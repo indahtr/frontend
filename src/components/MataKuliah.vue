@@ -104,14 +104,14 @@ export default {
   },
   methods: {
     loadAllMatakuliah() {
-      var url = 'http://127.0.0.1:8000/api/matakuliah';
+      var url = 'https://api-group7-prognet.manpits.xyz/api/matakuliah';
       axios.get(url).then(({ data }) => {
         console.log(data);
         this.allMatakuliah = data;
       });
     },
     removeMatakuliah(Matakuliah) {
-      var url = `http://127.0.0.1:8000/api/matakuliah/${Matakuliah.id}`;
+      var url = `https://api-group7-prognet.manpits.xyz/api/matakuliah/${Matakuliah.id}`;
       axios.delete(url).then(() => {
         console.log('Data Berhasil Dihapus !');
         this.loadAllMatakuliah(); // Memanggil kembali data setelah menghapus

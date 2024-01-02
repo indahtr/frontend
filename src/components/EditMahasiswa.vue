@@ -62,14 +62,14 @@ export default {
   },
   methods: {
     fetchMahasiswaData() {
-      var url = `http://127.0.0.1:8000/api/mahasiswa/${this.mahasiswaId}`;
+      var url = `https://api-group7-prognet.manpits.xyz/api/mahasiswa/${this.mahasiswaId}`;
       axios.get(url).then(({ data }) => {
         console.log(data);
         this.Mahasiswa = data;
       });
     },
     simpan() {
-      var url = `http://127.0.0.1:8000/api/mahasiswa/${this.Mahasiswa.id}`;
+      var url = `https://api-group7-prognet.manpits.xyz/api/mahasiswa/${this.Mahasiswa.id}`;
       axios.put(url, this.Mahasiswa).then(() => {
         console.log('Data Berhasil Di edit');
         // Redirect kembali ke halaman utama atau lakukan tindakan lain yang diperlukan
@@ -78,7 +78,7 @@ export default {
     },
     loadAgamaList() {
       // Permintaan untuk mendapatkan daftar agama
-      var agamaUrl = 'http://127.0.0.1:8000/api/agama';
+      var agamaUrl = 'https://api-group7-prognet.manpits.xyz/api/agama';
       axios.get(agamaUrl).then(({ data }) => {
         console.log(data);
         this.agamaList = data;

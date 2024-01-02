@@ -40,7 +40,7 @@ export default {
         password: this.password
       };
 
-      axios.post('http://127.0.0.1:8000/api/login', userData)
+      axios.post('https://api-group7-prognet.manpits.xyz/api/login', userData)
       .then(response => {
         localStorage.setItem('user', response.data.token);
         this.redirectUser();

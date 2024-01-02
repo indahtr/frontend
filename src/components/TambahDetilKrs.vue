@@ -67,26 +67,26 @@
     },
     methods: {
       loadMatakuliahList() {
-        var matkulurl = 'http://127.0.0.1:8000/api/matakuliah';
+        var matkulurl = 'https://api-group7-prognet.manpits.xyz/api/matakuliah';
         axios.get(matkulurl).then(({ data }) => {
           this.MatakuliahList = data;
         });
       },
       loadMahasiswaList() {
-        var mhsurl = 'http://127.0.0.1:8000/api/mahasiswa';
+        var mhsurl = 'https://api-group7-prognet.manpits.xyz/api/mahasiswa';
         axios.get(mhsurl).then(({ data }) => {
           this.MahasiswaList = data;
         });
       },
       loadKrsList() {
-        var krsurl = 'http://127.0.0.1:8000/api/krs';
+        var krsurl = 'https://api-group7-prognet.manpits.xyz/api/krs';
         axios.get(krsurl).then(({ data }) => {
           this.KRSList = data;
         });
       },
       addDetilKrs() {
         console.log('Data to be submitted:', this.detilKrs);
-        var url = 'http://127.0.0.1:8000/api/detilkrs';
+        var url = 'https://api-group7-prognet.manpits.xyz/api/detilkrs';
         axios.post(url, this.detilKrs).then(() => {
           console.log('Data Berhasil Ditambahkan!');
           // Setelah berhasil menambahkan, bisa kembali ke halaman list atau lakukan aksi lainnya

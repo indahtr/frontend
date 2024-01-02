@@ -57,14 +57,14 @@ created() {
 },
 methods: {
   fetchMahasiswaData() {
-    var url = `http://127.0.0.1:8000/api/matakuliah/${this.MatakuliahId}`;
+    var url = `https://api-group7-prognet.manpits.xyz/api/matakuliah/${this.MatakuliahId}`;
     axios.get(url).then(({ data }) => {
       console.log(data);
       this.matakuliah = data;
     });
   },
   simpan() {
-    var url = `http://127.0.0.1:8000/api/matakuliah/${this.matakuliah.id}`;
+    var url = `https://api-group7-prognet.manpits.xyz/api/matakuliah/${this.matakuliah.id}`;
     axios.put(url, this.matakuliah).then(() => {
       console.log('Data Berhasil Di edit');
       // Redirect kembali ke halaman utama atau lakukan tindakan lain yang diperlukan

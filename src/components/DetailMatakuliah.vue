@@ -49,7 +49,7 @@
     },
     methods: {
       fetchMatakuliahData() {
-        var url = `http://127.0.0.1:8000/api/matakuliah/${this.matakuliahId}`;
+        var url = `https://api-group7-prognet.manpits.xyz/api/matakuliah/${this.matakuliahId}`;
         axios.get(url).then(({ data }) => {
           this.Matakuliah = data;
         });

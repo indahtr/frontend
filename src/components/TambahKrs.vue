@@ -67,7 +67,7 @@
     },
     methods: {
         tambahKrs() {
-        var url = 'http://127.0.0.1:8000/api/krs';
+        var url = 'https://api-group7-prognet.manpits.xyz/api/krs';
         axios.post(url, this.krs).then(() => {
           console.log('Data Berhasil Ditambahkan');
           // Redirect ke halaman lain atau lakukan tindakan lain yang diperlukan

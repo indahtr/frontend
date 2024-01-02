@@ -53,13 +53,13 @@ export default {
   },
   methods: {
     fetchMahasiswaData() {
-      var url = `http://127.0.0.1:8000/api/mahasiswa/${this.mahasiswaId}`;
+      var url = `https://api-group7-prognet.manpits.xyz/api/mahasiswa/${this.mahasiswaId}`;
       axios.get(url).then(({ data }) => {
         this.Mahasiswa = data;
       });
     },
     loadAgamaList() {
-      var agamaUrl = 'http://127.0.0.1:8000/api/agama';
+      var agamaUrl = 'https://api-group7-prognet.manpits.xyz/api/agama';
       axios.get(agamaUrl).then(({ data }) => {
         this.agamaList = data;
       });

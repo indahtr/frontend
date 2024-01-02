@@ -116,28 +116,28 @@
       },
       methods: {
         loadAllDetilKrs() {
-          var url = 'http://127.0.0.1:8000/api/detilkrs';
+          var url = 'https://api-group7-prognet.manpits.xyz/api/detilkrs';
           axios.get(url).then(({ data }) => {
             console.log(data);
             this.allDetilKrs = data;
           });
         },
         loadKrsList(){
-            var krsurl = 'http://127.0.0.1:8000/api/krs';
+            var krsurl = 'https://api-group7-prognet.manpits.xyz/api/krs';
             axios.get(krsurl).then(({ data }) => {
                 console.log(data);
                 this.KRSList = data;
             });
         },
         loadMatakuliahList(){
-            var matkulurl = 'http://127.0.0.1:8000/api/matakuliah';
+            var matkulurl = 'https://api-group7-prognet.manpits.xyz/api/matakuliah';
             axios.get(matkulurl).then(({data}) => {
                 console.log(data);
                 this.MatakuliahList = data;
             });
         },
         loadMahasiswaList(){
-            var mhsurl = 'http://127.0.0.1:8000/api/mahasiswa';
+            var mhsurl = 'https://api-group7-prognet.manpits.xyz/api/mahasiswa';
             axios.get(mhsurl).then(({data}) => {
                 console.log(data);
                 this.MahasiswaList = data;
@@ -168,7 +168,7 @@
             return mahasiswa ? mahasiswa.nama : 'Tidak Diketahui';
         },
         removeDetilKrs(DetilKrs) {
-          var url = `http://127.0.0.1:8000/api/detilkrs/${DetilKrs.id}`;
+          var url = `https://api-group7-prognet.manpits.xyz/api/detilkrs/${DetilKrs.id}`;
           axios.delete(url).then(() => {
             console.log('Data Berhasil Dihapus !');
             this.loadAllDetilKrs(); 

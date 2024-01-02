@@ -61,14 +61,14 @@
     },
     methods: {
       loadAgamaList() {
-        var agamaUrl = 'http://127.0.0.1:8000/api/agama';
+        var agamaUrl = 'https://api-group7-prognet.manpits.xyz/api/agama';
         axios.get(agamaUrl).then(({ data }) => {
           console.log(data);
           this.agamaList = data;
         });
       },
       tambahMahasiswa() {
-        var url = 'http://127.0.0.1:8000/api/mahasiswa';
+        var url = 'https://api-group7-prognet.manpits.xyz/api/mahasiswa';
         axios.post(url, this.mahasiswa).then(() => {
           console.log('Data Berhasil Ditambahkan');
           // Redirect ke halaman lain atau lakukan tindakan lain yang diperlukan
